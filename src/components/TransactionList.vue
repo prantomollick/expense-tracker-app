@@ -180,8 +180,7 @@ const handleDeleteTransaction = (id) => {
             @click="prevPage"
             class="btn btn-secondary"
         >
-            <i class="pi pi-angle-double-left"></i>
-            <span> Previous</span>
+            Previous
         </button>
         <span>Page {{ currentPage }} of {{ totalPages }}</span>
         <button
@@ -192,8 +191,7 @@ const handleDeleteTransaction = (id) => {
             @click="nextPage"
             class="btn btn-secondary"
         >
-            <span>Next </span>
-            <i class="pi pi-angle-double-right"></i>
+            Next
         </button>
     </div>
 </template>

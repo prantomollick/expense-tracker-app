@@ -82,10 +82,7 @@ const addTransaction = () => {
             </div>
 
             <div class="col-3">
-                <button class="btn btn-primary w-100">
-                    <i class="pi pi-plus" style="font-size: 0.8rem"></i
-                    ><span> Add </span>
-                </button>
+                <button class="btn btn-primary w-100">Add</button>
             </div>
         </div>
     </form>
