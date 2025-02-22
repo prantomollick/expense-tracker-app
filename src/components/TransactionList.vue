@@ -137,7 +137,9 @@ const handleDeleteTransaction = (id) => {
             </thead>
             <tbody>
                 <tr v-if="filterTransactions.length === 0">
-                    <td colspan="4" class="text-center">No Transactions</td>
+                    <td colspan="4" class="text-center">
+                        No transactions recorded yet.
+                    </td>
                 </tr>
 
                 <tr
@@ -146,11 +148,13 @@ const handleDeleteTransaction = (id) => {
                 >
                     <td>{{ transaction.title }}</td>
                     <td
-                        :class="
-                            transaction.type === 'income'
-                                ? ['text-success']
-                                : ['text-danger']
-                        "
+                        :class="{
+                            'text-success': transaction.type === 'income',
+                            'text-danger': transaction.type === 'expense',
+                            'fw-bold':
+                                Number(transaction.amount) >= 500 &&
+                                transaction.type === 'expense',
+                        }"
                     >
                         ${{ transaction.amount }}
                     </td>
