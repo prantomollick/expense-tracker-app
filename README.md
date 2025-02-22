@@ -122,7 +122,7 @@ The app should now be running on `http://localhost:3000` or the port specified i
 ## Deployment
 
 -   Live Demo:
-    A live demo of a similar project is available [here]().
+    A live demo of a similar project is available [here](https://prantomollick.github.io/expense-tracker-app/).
 
 ## Contributing
 
